@@ -1,0 +1,53 @@
+Basic CRM Scenarios
+
+"What is the current shipping status of order SNP-1043?"
+
+"Do we have any Jordan 4s (SKU: JD-4-BRED) available in stock right now?"
+
+"Can you try to cancel order SNP-1042?" (This tests error handling—Claude should refuse because the Air Force 1s are already shipped).
+
+Intermediate Automation Scenarios
+
+"Find Aarav Sharma's orders and process a return for any items that have already been delivered."
+
+"Priya Nair wants to cancel her purchase. Can you check her history and cancel the order automatically if it hasn't shipped yet?"
+
+"A customer is asking for a refund on order SNP-1043. Can you initiate the return process?" (Claude should refuse because the item is still processing and not delivered).
+
+"Who are our top VIP customers with at least 3 orders, and what items have they purchased so far?"
+
+"Check our inventory for any items with stock under 5 units. For each one found, check the Meta ad insights and recommend whether we should pause advertising."
+
+Advanced Analytics & Campaign Scenarios
+
+"We want to push a massive Instagram campaign for our most popular item. What is our top-selling SKU right now, and do we have enough inventory to support a sudden spike in traffic?"
+
+"Generate a low stock alert for any items with fewer than 10 units remaining so our marketing team can pause the paid ads for them."
+
+"We are launching an exclusive sneaker drop at the Cologne Schildergasse store. Identify our VIP customers who have placed at least 2 orders so we can email them an early-access code."
+
+"Run a quick diagnostic on our warehouse fulfillment performance to see our successful delivery rate for this quarter."
+
+"Analyze our overall warehouse fulfillment rate and report on the breakdown between delivered, shipped, processing, and cancelled orders."
+
+For Meta Graph API
+
+"We are running a massive marketing campaign right now. Can you check if we have any sneaker SKUs with fewer than 5 pairs in stock? If you find any, cross-reference them with the Meta Graph API. If we are paying more than €3.00 per click for an item that is almost sold out, please advise me on what to do with the ad campaign."
+
+"We have the Jordan 4 Bred (JD-4-BRED) release scheduled for tomorrow morning on the eShop. Can you check our launch readiness and let me know if we are good to go?"
+
+"Okay, the Jordan 4s aren't ready. What about the Travis Scott Jordans (JD-1-TRV)? Have those made it to Dorsten, and are the HQ photos done?"
+
+"I need a fast ad-hoc performance evaluation for our executive team, skipping the usual PowerPoint deck. Please run a full diagnostic on our current operations and give me a markdown-formatted report. Include our warehouse fulfillment efficiency, identify our top-selling SKU, and cross-reference that top SKU with the Meta Graph API to evaluate our ad-spend efficiency. Finally, identify our VIP customers so we know who is driving the highest purchase frequency."
+
+"Generate a Cross-Channel Efficiency Report for our marketing team. First, identify our top-selling SKU. Then, pull the Meta Graph API insights for that specific SKU to check our Cost Per Click and campaign status. Finally, check our low stock alerts (threshold: 50 units). Format your findings into a markdown table and provide a strict recommendation on whether we should pause or scale our ad spend."
+
+"I need the Morning Operations Briefing. Please calculate our overall warehouse fulfillment performance. Next, query the system for our VIP customers (minimum 3 orders). Present the fulfillment rate as an executive summary, followed by a bulleted list of the VIP customers so our support team can prioritize their tickets today."
+
+"Create a Launch Readiness Report for this week's key drops. Check the readiness status for the Jordan 4 Bred (JD-4-BRED) and the Travis Scott Jordan 1 (JD-1-TRV). Detail exactly where the inventory is currently sitting between the central inbound hub and the eShop 3PL, and check the marketing photo status. Give me a clear 'GO' or 'NO-GO' for each release."
+
+"We are doing a frequency analysis on our customer base. Identify our VIP customers who have ordered at least 4 times. Pick one of those VIPs and pull their entire order history to show me exactly what they are buying. Output this as a 'Customer Profile' report."
+
+"We are preparing to scale up our Meta ad spend for the Jordan 4 Bred (JD-4-BRED) performance campaign. Can you first check the Meta Graph API to see if the campaign is active? If it is, please query the corporate SharePoint server to retrieve the creative assets our team needs to build the new ads, and provide the direct links."
+
+"Check the status of order SNP-1042 using our order-server. Once you retrieve the item and status, use Gmail via Zapier to create a draft email to khanvilkarshweta05@gmail.com informing them that their order is on its way."

@@ -1,0 +1,9 @@
+com\spstech\ordermcp\MetaMarketingService.class
+com\spstech\ordermcp\AssetManagementService.class
+com\spstech\ordermcp\OrderMcpServerApplication.class
+com\spstech\ordermcp\SnipesRepository.class
+com\spstech\ordermcp\McpConfig.class
+com\spstech\ordermcp\OrderTools.class
+com\spstech\ordermcp\MetaAdInsights.class
+com\spstech\ordermcp\SharePointService.class
+com\spstech\ordermcp\Order.class
