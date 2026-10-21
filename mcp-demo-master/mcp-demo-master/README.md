@@ -1,6 +1,6 @@
 # order-server — an MCP server in Java (Spring Boot + Spring AI)
 
-Companion repo for the SPS Tech video **"Connect Claude to Your Spring Boot App — MCP Server in Java (2026)"**.
+A repo for  **"Connect Claude to Your Spring Boot App — MCP Server in Java (2026)"**.
 It exposes three tools to any MCP client (e.g. Claude Desktop) over **stdio**, with **zero** REST controllers.
 
 ## Stack (verified June 2026)
@@ -41,7 +41,10 @@ add the server, then fully restart Claude Desktop:
   }
 }
 ```
-Ask Claude: *"What is the status of order 1042?"* — it will call `getOrderStatus("1042")` and answer with live data
+Ask Claude: *"What is the status of order 1052?"* — it will call `getOrderStatus("1042")` and answer with live data
+(`Order 1042 (Mechanical Keyboard) is SHIPPED`).
+
+Ask Claude: *"Who are our top VIP customers with at least 3 orders, and what items have they purchased so far?"* — it will call internal methods and answer with live data
 (`Order 1042 (Mechanical Keyboard) is SHIPPED`).
 
 ### Why these properties (stdio gotcha)
